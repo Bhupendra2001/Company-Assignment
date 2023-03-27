@@ -1,0 +1,81 @@
+.tab{
+    border: 2px solid red;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+   
+    background-color: rgb(127, 251, 255);
+    border-radius: 30px;
+   
+    margin-top: 100px;
+}
+.tab .head tr {
+color: blue;
+border: 2px solid blue;
+display: flex;
+justify-content: space-between;
+height: 27px;
+margin: 20px;
+width:auto;
+border-radius: 5px;
+}
+.tab .head tr:hover{
+ color: rgb(243, 11, 169);
+ 
+}
+.tab .body tr {
+   
+ color: rgb(13, 13, 253);
+ display: flex;
+ justify-content: space-around;
+ border: 2px solid rgb(16, 35, 236);
+ margin: 20px;
+ border-radius: 20px;
+}  
+.tab .body tr:hover{
+    color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.cont h1{
+    color: #c9f90a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    border: 2px solid rgb(10, 250, 254);
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.btn button{
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    color: rgb(43, 0, 255);
+    background-color: aliceblue;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+.btn button:hover{
+  
+   
+    border: 2px solid #340bd8;
+   
+    border-radius: 35px;
+
+    color: #3605f9;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    height: 1000px;
+}

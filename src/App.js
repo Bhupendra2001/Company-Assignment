@@ -1,23 +1,60 @@
-import logo from './logo.svg';
+import {createBrowserRouter , RouterProvider, Outlet} from 'react-router-dom'
 import './App.css';
+import Stopwatch from './StopWatch';
+import Button from './Button'
+import Navbar from './Navbar';
+import MyForm from './MyForm'
+import NewButton from './NewButton'
+//import { Children } from 'react';
 
-function App() {
+
+
+
+function Layout(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Navbar/>
+    <Outlet/>
+   
+    </>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+   element : <Layout/>,
+   children : [
+
+    {
+      path : '/Form',
+      element : <MyForm/>
+    },
+    {
+      path : '/Button',
+      element : <Button/>
+    },
+    {
+      path : '/stopwatch',
+      element : <Stopwatch/>
+    },
+    {
+    path : '/newbutton',
+    element : <NewButton/>
+    }
+
+   ]
+
+}
+])
+function App() 
+{
+  return (
+    
+    <div className='app'>
+     <div className='container'>
+      <RouterProvider router={router}/>
+     </div>
     </div>
   );
 }
