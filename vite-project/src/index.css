@@ -50,19 +50,31 @@
 
 .inputs  input{
   display: block;
-  background-color: #e51c1c;
+  background-color: teal;
   border-radius: 10px;
 }
 
 .inputs  .sub{
- background-color: #3deff8;
+ background-color:teal;
  color: black;
  font-size: 23px;
 }
+
+.inputs .del{
+  background-color: teal;
+ color: black;
+ font-size: 23px;
+}
+.inputs .del:hover{
+  background-color: rgb(254, 36, 36);
+  font-size: 23px;
+  cursor:pointer;
+}
+
 .inputs  .sub:hover{
   background-color: rgb(57, 252, 57);
   font-size: 23px;
-  cursor:progress;
+  cursor:pointer;
 }
 
 .inputs  input:hover{

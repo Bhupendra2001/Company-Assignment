@@ -34,6 +34,19 @@ export default function Users() {
       })
     );
   }
+
+  function deleteUser(userid , deletes){
+    setUser(
+      users.map((user)=>{
+        if(user.id === userid){
+          return {
+       ...deletes,
+          }
+        }
+        return user
+      })
+    )
+  }
   return (
     <div className="U">
       <h1>Users</h1>
@@ -43,7 +56,7 @@ export default function Users() {
       <section className="users">
         {users.map((user) => {
           return (
-            <UserCard onUserChange={updateUser} user={user} key={user.id} />
+            <UserCard onUserChange={updateUser} onUserDelete={deleteUser} user={user} key={user.id} />
           );
         })}
       </section>
@@ -52,7 +65,8 @@ export default function Users() {
 }
 
 function UserCard(props) {
-  const { user, onUserChange } = props;
+  const { user, onUserChange ,onUserDelete} = props;
+  
   const [values, setValues] = useState({
     email: "",
     name: "",
@@ -60,6 +74,10 @@ function UserCard(props) {
 
   function handleOnClick(id) {
     onUserChange(id, values);
+  }
+
+  function handleDeleteOnClick(id){
+    onUserDelete(id,values);
   }
 
   const onChange = ({ target: { name, value } }) => {
@@ -99,6 +117,12 @@ function UserCard(props) {
           onClick={() => handleOnClick(user.id)}
           value={"Update"}
         />
+        <input className="del"
+          type="submit"
+          onClick={() => handleDeleteOnClick(user.id)}
+          value={"Delete"}
+        />
+
       </div>
     </div>
   );
