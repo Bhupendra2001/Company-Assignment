@@ -1,0 +1,123 @@
+[
+    {
+        "id" : 1,
+        "name" : "rahul",
+        "city" : "nagpur",
+        "age" : 22,
+        "email" : "rahul@gmail.com",
+        "phone" : 8720168498
+
+    },
+    
+    {
+        "id" : 2,
+        "name" : "ayush",
+        "city" : "jabalpur",
+        "age" : 24,
+        "email" : "ayush@gmail.com",
+        "phone" : 8720168998
+
+    },
+    
+    {
+        "id" : 3,
+        "name" : "piyush",
+        "city" : "mohali",
+        "age" : 29,
+        "email" : "piyush@gmail.com",
+        "phone" : 8720178498
+
+    },
+    
+    {
+        "id" : 4,
+        "name" : "dellep",
+        "city" : "indore",
+        "age" : 23,
+        "email" : "dellep@gmail.com",
+        "phone" : 8722178498
+
+    },
+    
+    {
+        "id" : 5,
+        "name" : "shriyank",
+        "city" : "pune",
+        "age" : 20,
+        "email" : "shriyank@gmail.com",
+        "phone" : 8724178498
+
+    },
+    
+    {
+        "id" : 6,
+        "name" : "virendra",
+        "city" : "nagpur",
+        "age" : 27,
+        "email" : "virendra@gmail.com",
+        "phone" : 8724178898
+
+    },
+    
+    {
+        "id" : 7,
+        "name" : "harsh",
+        "city" : "gurgaon",
+        "age" : 15,
+        "email" : "harsh@gmail.com",
+        "phone" : 8524178898
+
+    },
+    
+    {
+        "id" : 8,
+        "name" : "abhinav",
+        "city" : "chinnai",
+        "age" : 24,
+        "email" : "abhinav@gmail.com",
+        "phone" : 8724178298
+
+    },
+    
+    {
+        "id" : 9,
+        "name" : "hira lal yadav",
+        "city" : "mumbai",
+        "age" : 21,
+        "email" : "hirayadav@gmail.com",
+        "phone" : 8704178298
+
+
+    },
+    
+    {
+        "id" : 10,
+        "name" : "sachin",
+        "city" : "surat",
+        "age" : 19,
+        "email" : "sachin@gmail.com",
+        "phone" : 8724174298
+
+    },
+    
+    {
+        "id" : 11,
+        "name" : "mayank",
+        "city" : "ujjain",
+        "age" : 28,
+        "email" : "mayank@gmail.com",
+        "phone" : 8924178298
+
+
+    },
+    
+    {
+        "id" : 12,
+        "name" : "bhupendra",
+        "city" : "bhopal",
+        "age" : 24,
+        "email" : "bhupendra@gmail.com",
+        "phone" : 9724178298
+
+    }
+]
